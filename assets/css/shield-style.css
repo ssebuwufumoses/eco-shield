@@ -1,0 +1,114 @@
+/* Container */
+.wpes-placeholder {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #000;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.wpes-placeholder img.wpes-poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.wpes-placeholder.wpes-vertical {
+    aspect-ratio: 9 / 16;
+    max-width: 350px;
+    margin-left: auto; margin-right: auto;
+}
+
+.wpes-placeholder:hover { transform: translateY(-2px); }
+
+/* Overlay & Play Button */
+.wpes-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(0, 0, 0, 0.3); 
+    transition: background 0.3s ease;
+    z-index: 2;
+}
+.wpes-placeholder:hover .wpes-overlay { background: rgba(0, 0, 0, 0.1); }
+
+.wpes-play-button {
+    width: 68px; height: 48px;
+    background-color: var(--wpes-brand-color, #f00);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+.wpes-placeholder:hover .wpes-play-button {
+    transform: scale(1.1);
+    filter: brightness(0.85);
+    background-color: var(--wpes-brand-color, #f00); 
+}
+.wpes-play-button::after {
+    content: ""; position: absolute;
+    top: 50%; left: 55%; transform: translate(-50%, -50%);
+    border-style: solid; border-width: 10px 0 10px 16px;
+    border-color: transparent transparent transparent #ffffff;
+}
+
+.wpes-placeholder iframe {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    border: none; z-index: 10;
+}
+
+/* Privacy Text Overlay */
+.wpes-privacy-notice {
+    position: absolute; bottom: 0; left: 0; width: 100%;
+    background: rgba(0, 0, 0, 0.65); color: #fff;
+    font-size: 11px; padding: 6px 12px; text-align: center;
+    z-index: 5; backdrop-filter: blur(2px);
+    border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* --- Feature 3: Lightbox CSS --- */
+.wpes-lightbox-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 999999;
+    display: none; /* Hidden by default */
+    align-items: center; justify-content: center;
+    animation: wpesFadeIn 0.3s ease;
+}
+
+.wpes-lightbox-content {
+    position: relative; width: 90%; max-width: 900px;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    border-radius: 8px;
+}
+
+.wpes-lightbox-video-wrap {
+    width: 100%; height: 100%;
+    position: relative;
+}
+
+.wpes-lightbox-video-wrap iframe {
+    width: 100%; height: 100%;
+    position: absolute; top: 0; left: 0;
+}
+
+.wpes-lightbox-close {
+    position: absolute; top: -40px; right: -10px;
+    background: none; border: none;
+    color: #fff; font-size: 30px; cursor: pointer;
+    line-height: 1; opacity: 0.8;
+}
+.wpes-lightbox-close:hover { opacity: 1; transform: scale(1.1); }
+
+@keyframes wpesFadeIn { from { opacity: 0; } to { opacity: 1; } }
