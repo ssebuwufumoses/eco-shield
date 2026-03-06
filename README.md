@@ -29,4 +29,4 @@ I engineered several advanced systems into this latest version to move beyond si
 3. Activate and visit **Settings > Eco-Shield** to customize.
 
 ---
-**Developed by [Moses Ssebuwufu](https://github.com/ssebuwufumoses)** Dedicated to building a faster, greener web.*
+**Developed by [Moses Ssebuwufu](https://github.com/ssebuwufumoses).** Dedicated to building a faster, greener web.*
