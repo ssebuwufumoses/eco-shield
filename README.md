@@ -23,7 +23,7 @@ I engineered several advanced systems into this latest version to move beyond si
 * **YouTube Shorts Support:** Native detection and 9:16 vertical player rendering.
 * **Smart Fallbacks:** Automatic static image conversion for RSS feeds and HTML emails (Gmail/Outlook).
 
-* ## 🗺️ Roadmap (Future Development)
+* ## Roadmap (Future Development)
 I am currently planning the next evolution of Eco-Shield. Upcoming goals include:
 * [ ] **v1.3.0:** Enhanced analytics with "Time Watched" metrics.
 * [ ] **v1.3.0:** Automated thumbnail refresh scheduler.
