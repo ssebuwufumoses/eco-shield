@@ -23,6 +23,12 @@ I engineered several advanced systems into this latest version to move beyond si
 * **YouTube Shorts Support:** Native detection and 9:16 vertical player rendering.
 * **Smart Fallbacks:** Automatic static image conversion for RSS feeds and HTML emails (Gmail/Outlook).
 
+* ## 🗺️ Roadmap (Future Development)
+I am currently planning the next evolution of Eco-Shield. Upcoming goals include:
+* [ ] **v1.3.0:** Enhanced analytics with "Time Watched" metrics.
+* [ ] **v1.3.0:** Automated thumbnail refresh scheduler.
+* [ ] **v1.4.0:** Support for additional video providers.
+
 ## Installation
 1. Search for **Eco-Shield** in your WordPress Dashboard.
 2. Or download from the [Official WordPress Plugin Directory](https://wordpress.org/plugins/eco-shield/).
