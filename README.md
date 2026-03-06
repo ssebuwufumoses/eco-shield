@@ -1,4 +1,4 @@
-# Eco-Shield (v1.3.0)
+# Eco-Shield (v1.2.1)
 
 ![WordPress](https://img.shields.io/badge/WordPress-6.5+-0073aa.svg)
 ![PHP](https://img.shields.io/badge/PHP-7.4+-777bb4.svg)
